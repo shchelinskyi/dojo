@@ -1,0 +1,59 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 3000;
+}
+
+.contentWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 330px;
+  height: 200px;
+  padding: 10px ;
+  border-radius: 46px;
+  background: #c41414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #000000;
+  transition: all 0.25s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.karateImg {
+  width: 60px;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.karateImg2 {
+  width: 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

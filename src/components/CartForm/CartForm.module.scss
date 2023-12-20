@@ -1,0 +1,153 @@
+.formLabel {
+  font-size: 16px;
+  color:#000000;
+}
+
+
+.label {
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  display: none;
+}
+
+.box {
+  border-radius: 4px;
+  display: inline-block;
+  width:15px;
+  height: 15px;
+  border: 1px solid grey;
+  margin-right: 5px;
+  position:relative;
+}
+
+.box::after {
+  border-radius: 2px;
+  content:"";
+  width: 10px;
+  height: 10px;
+  background-color: #E1251B;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.checkbox:checked + .box::after {
+  opacity: 1;
+}
+
+.deliveryLabel {
+  font-size: 14px;
+}
+
+.radio:checked + .box::after {
+  opacity: 1;
+}
+
+.btnBlock {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btnSubmit {
+  width: 100%;
+  position:relative;
+  padding: 8px 12px;
+  background-color: #E1251B;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color:#ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  transition: 0.25s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #E1251B;
+    border: 2px solid black;
+  }
+
+  &:active::after {
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: black;
+  }
+
+  &:disabled {
+    background-color: #CDCBCA;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+  }
+
+}
+
+.field {
+  color: black;
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+
+.checkboxLabel {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  @media (max-width: 480px) {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+.footerLabel1 {
+  font-size: 14px;
+  color: #000000;
+}
+
+.footerLabel2 {
+  font-size: 14px;
+  color: #E1251B;
+}
+
+.deliveryBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.deliveryTitle {
+  font-size: 16px;
+}
+
+.deliveryLabel {
+  font-size: 14px;
+}
+
+.radio {
+  display: none;
+}
+
+.totalPrice {
+  align-self: flex-end;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.link2 {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}

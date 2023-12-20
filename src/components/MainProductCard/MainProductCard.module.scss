@@ -1,0 +1,413 @@
+.overlay {
+  position: fixed;
+  z-index: 2003;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+
+  @media (max-width: 480px) {
+    background-color: white;
+  }
+}
+
+.test{
+
+}
+
+.contentWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  max-width: 1180px;
+  width: 90vw;
+  height: 95vh;
+  //max-height: 95vh;
+  background: white;
+  padding: 50px 50px 25px 50px;
+  border-radius: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media (max-width: 1200px) {
+    padding: 40px 40px 25px 40px;
+  }
+
+  @media (max-width: 992px) {
+    padding: 30px 20px 25px 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 30px 10px 25px 10px;
+  }
+}
+
+.content {
+  overflow-x: hidden;
+  //overflow-y: auto;
+  width: 100%;
+  //height: 100%;
+  //max-height: 90%;
+  //max-height: 84vh;
+  padding: 50px 50px 25px 50px;
+  border-radius: 46px;
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+
+  @media (max-width: 1200px) {
+    width: 90vw;
+    padding: 40px 40px 25px 40px;
+  }
+
+  @media (max-width: 992px) {
+    width: 90vw;
+    padding: 30px 20px 25px 20px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  @media (max-width: 480px) {
+    width: 90vw;
+    padding: 30px 10px 25px 10px;
+    flex-direction: column;
+  }
+}
+
+
+.imageBlock {
+  position: relative;
+  width: 380px;
+  max-height: 500px;
+
+
+  @media (max-width: 1200px) {
+    width: 300px;
+  }
+
+  @media (max-width: 992px) {
+    max-width: 540px;
+    width: 100%;
+  }
+
+}
+
+.descriptionBlock {
+  min-width: 580px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1200px) {
+    min-width: unset;
+    width: 460px;
+  }
+
+  @media (max-width: 992px) {
+    max-width: 540px;
+    width: 100%;
+  }
+}
+
+.imageWrapper {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border: 1px solid #D8D8D8;
+  border-radius: 46px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1200px) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (max-width: 992px) {
+    width: 100%;
+    height: auto;
+    max-width: 540px;
+    max-height: 540px;
+  }
+}
+
+.imgShow {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 46px;
+
+  @media (max-width: 1200px) {
+    width: 90%;
+    height: 90%;
+  }
+
+  @media (max-width: 992px) {
+    width: 90%;
+    height: auto;
+    max-width: 540px;
+    max-height: 540px;
+  }
+
+}
+
+.navImages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.imgShot {
+  border: 1px solid #D8D8D8;
+  border-radius: 16px;
+  width: 87px;
+  height: 87px;
+  object-fit: cover;
+
+  @media (max-width: 1200px) {
+    flex: 2 2 69px;
+    max-width: 69px;
+    max-height: 69px;
+  }
+
+  @media (max-width: 992px) {
+    flex: 2 2 124px;
+    max-width: 124px;
+    max-height: 124px;
+  }
+
+  @media (max-width: 480px) {
+    flex: 2 2 74px;
+    max-width: 74px;
+    max-height: 74px;
+  }
+}
+
+.arrow {
+  font-size: 35px;
+  position: absolute;
+  top: 170px;
+  cursor: pointer;
+}
+
+.arrowLeft {
+  left: 5px;
+}
+
+.arrowRight {
+  right: 5px;
+}
+
+.productTitle {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+
+  @media (max-width: 1200px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 20px;
+  }
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
+}
+
+.productPrice {
+  font-size: 24px;
+  color: #c41414;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+  @media (max-width: 1200px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 20px;
+  }
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
+}
+
+.charactersBlock {
+  display: flex;
+  column-gap: 20px;
+  width: 580px;
+  margin-bottom: 30px;
+  @media (max-width: 992px) {
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+}
+
+.charactersItem {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+
+}
+
+.charactersTitle {
+  font-size: 18px;
+  line-height: 180%;
+}
+
+
+.selectContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 180px;
+  height: 40px;
+  border: 1px solid #D8D8D8;
+  border-radius: 12px;
+  padding: 5px 8px 5px 20px;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}
+
+.selectBox {
+  position: relative;
+  appearance: none;
+  background-color: transparent;
+  width: 100%;
+  display: block;
+  border: none;
+  font-size: 16px;
+  color: #737373;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.iconContainer {
+  position: absolute;
+  right: 10px;
+}
+
+.selectIcon {
+  width: 8px;
+}
+
+.btn {
+  max-width: 150px;
+  padding: 8px 12px;
+  background-color: #E1251B;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  transition: all 0.3s;
+
+  &:hover {
+    border: 2px solid black;
+  }
+
+  &:active {
+    background-color: black;
+  }
+
+  &:disabled {
+    background-color: #CDCBCA;
+  }
+
+  &:disabled::after {
+    background-color: transparent;
+  }
+}
+
+.productDescription {
+  width: 100%;
+  max-width: 580px;
+  margin: 20px 0 20px 0;
+  font-size: 16px;
+  line-height: 180%;
+  text-align: justify;
+
+  @media (max-width: 1200px) {
+    max-width: 460px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.productComment {
+  width: 100%;
+  max-width: 580px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 180%;
+  text-align: justify;
+
+  @media (max-width: 992px) {
+    max-width: 460px;
+    width: 100%;
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.additionalData {
+  display: flex;
+  flex-direction: column;
+}
+
+.additionalItem {
+  display: flex;
+  column-gap: 2px;
+}
+
+.additionalItemLabel {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 180%;
+}
+
+.additionalItemValue {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 180%;
+}
+
+.closeBtn {
+  font-size: 30px;
+  cursor: pointer;
+  color: #000000;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  transition: all 0.25s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}

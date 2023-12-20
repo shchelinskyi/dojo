@@ -1,0 +1,115 @@
+.wrapper {
+  max-width: 1720px;
+  margin-top: 141px;
+  margin-bottom: 50px;
+  border-radius: 46px;
+  background-color: #EDEDED;
+  padding: 140px 0;
+  @media (max-width: 1200px) {
+    padding: 100px 40px;
+  }
+  @media (max-width: 480px) {
+    padding: 50px 34px;
+  }
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.content {
+  margin:0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  column-gap: 20px;
+  height: 970px;
+  flex-wrap: wrap;
+  @media (max-width: 1200px) {
+    align-content: center
+  }
+  @media (max-width: 992px) {
+    height: auto;
+    flex-wrap: nowrap;
+  }
+}
+
+.contactsTitle {
+  font-family: Gagalin, sans-serif;
+  font-size: 96px;
+  text-align: center;
+  margin-bottom: 100px;
+
+  @media (max-width: 1200px) {
+    font-size: 84px;
+    margin-bottom: 70px;
+  }
+  @media (max-width: 992px) {
+    font-size: 84px;
+    margin-bottom: 60px;
+  }
+  @media (max-width: 480px) {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+}
+
+.logoContainer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 176px;
+  height: 176px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 992px) {
+  display: none;
+  }
+}
+
+.logo {
+  pointer-events: none;
+  width: 128px;
+  height: 128px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo  {
+    animation: Logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes Logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.line {
+  display: none;
+
+  @media (max-width: 992px) {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #D8D8D8;
+  }
+
+}
+
+.uaIcon{
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

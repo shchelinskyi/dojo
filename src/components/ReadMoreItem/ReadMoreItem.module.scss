@@ -1,0 +1,50 @@
+.link {
+  position: relative;
+  display: flex;
+  gap:10px;
+  padding:34px 50px;
+  border-radius: 77px;
+  border:2px solid black;
+  cursor: pointer;
+  @media (max-width: 992px) {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 24px 70px 24px 40px;
+  }
+
+  @media (max-width: 650px) {
+    padding: 24px 20px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 14px 16px;
+  }
+}
+
+.linkTitle {
+  font-size: 24px;
+  font-weight: bold;
+
+  @media (max-width: 1200px) {
+    font-size: 20px;
+  }
+  @media (max-width: 992px) {
+    font-size: 20px;
+  }
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+
+.iconPlus {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  @media (max-width: 480px) {
+    display: none;
+  }
+}

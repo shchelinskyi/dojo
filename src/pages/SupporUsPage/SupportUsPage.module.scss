@@ -1,0 +1,162 @@
+.wrapper {
+  margin: 0 auto 30px;
+  border-radius: 46px;
+  padding-top:128px;
+  max-width: 1720px;
+  height: 400px;
+  background-image: url("../../assets/images/support/bg-support.webp");
+  background-size: cover;
+
+  @media (max-width: 992px) {
+    padding-top:70px;
+  }
+  @media (max-width: 480px) {
+    padding-bottom:80px;
+    height: auto;
+  }
+}
+
+.contentWrapper {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 992px) {
+   flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
+}
+
+.content {
+  width: 600px;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0 10px;
+  box-sizing: border-box;
+  @media (max-width: 1200px) {
+    font-size: 20px;
+  }
+  @media (max-width: 992px) {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+    text-align: unset;
+  }
+
+}
+
+.handsIcon {
+  width: 38px;
+}
+
+.heartIcon {
+  width: 25px;
+}
+
+.supportLabel {
+  width: 300px;
+  @media (max-width: 1200px) {
+    width: 257px;
+  }
+  @media (max-width: 480px) {
+    margin-left: 80px;
+    margin-bottom: 30px;
+  }
+
+}
+
+.supportBlock {
+  position: relative;
+  padding-left: 146px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 39px;
+
+  @media (max-width: 1200px) {
+    padding-left: 106px;
+    gap: 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding-left: 0;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+}
+
+.btnLabel {
+  width: 170px;
+}
+
+.spiralImg {
+  width: 146px;
+  position: absolute;
+  top:0;
+  left: 0;
+
+  @media (max-width: 1200px) {
+    width: 106px;
+  }
+  @media (max-width: 992px) {
+    width: 97px;
+  }
+  @media (max-width: 480px) {
+    top: -40px;
+    transform: rotate(60deg);
+  }
+}
+
+.fingerImg {
+  width: 41px;
+}
+
+.fingerBlock {
+  position: absolute;
+  bottom:-10px;
+  right: 5px;
+  display:flex;
+  gap: 2px;
+  align-items: flex-end;
+  font-size: 16px;
+
+  @media (max-width: 992px) {
+    bottom:-25px;
+    right: -25px;
+  }
+
+  @media (max-width: 480px) {
+    bottom:-25px;
+    right: 25px;
+  }
+}
+
+.fingerBlockEN {
+  display:flex;
+  gap: 2px;
+  align-items: flex-end;
+  font-size: 16px;
+  position: absolute;
+  bottom:-30px;
+  right: 5px;
+
+  @media (max-width: 992px) {
+    bottom:-25px;
+    right: -25px;
+  }
+
+  @media (max-width: 480px) {
+    bottom:-25px;
+    right: 25px;
+  }
+}
+
+s.btnWrapper {
+  width: 100%;
+}

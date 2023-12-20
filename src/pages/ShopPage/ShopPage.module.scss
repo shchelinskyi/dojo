@@ -1,0 +1,136 @@
+.wrapper {
+  max-width: 1720px;
+  margin-top: 50px;
+  margin-bottom: 170px;
+  border-radius: 46px;
+  background-color: #EDEDED;
+  padding: 140px 0;
+  @media (max-width: 1200px) {
+    padding: 100px 40px;
+  }
+  @media (max-width: 992px) {
+    padding: 100px 40px;
+  }
+  @media (max-width: 480px) {
+    padding: 50px 10px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+  position: relative;
+
+  @media (max-width: 1200px) {
+    max-width: 940px;
+  }
+}
+
+
+.title {
+  font-family: Gagalin, sans-serif;
+  font-size: 96px;
+  text-align: center;
+  margin-bottom: 100px;
+
+  @media (max-width: 1200px) {
+    font-size: 84px;
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 84px;
+    margin-bottom: 70px;
+  }
+  @media (max-width: 480px) {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+}
+
+.content {
+  display: flex;
+  //justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1180px;
+  flex-wrap: wrap;
+  cursor: pointer;
+
+  @media (max-width: 1200px) {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+.link {
+  gap:10px;
+  padding:34px 50px;
+  border-radius: 77px;
+  border:2px solid black;
+}
+
+.linkTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.iconPlus {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.usefulIcon {
+  position:absolute;
+  bottom: -80px;
+  left: 50%;
+  width: 603px;
+  object-fit: cover;
+}
+
+.tabsList {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.tab {
+  display: inline-block;
+  border-radius: 44px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  background-color: white;
+  padding:12px 30px;
+  border: 1px solid black;
+  cursor: pointer;
+  color:black;
+
+  &:hover {
+    color:black;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 16px;
+    padding:10px 26px;
+  }
+
+  @media (max-width: 992px) {
+    padding:10px 26px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    padding:6px 20px;
+    font-size: 14px;
+  }
+}
+
+.active {
+  background-color: black;
+  color: #ffffff!important;
+}
+

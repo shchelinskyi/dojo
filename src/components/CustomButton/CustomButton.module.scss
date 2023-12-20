@@ -1,0 +1,32 @@
+.btn {
+  padding: 8px 12px;
+  background-color: #E1251B;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color:#ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  transition: all 0.3s;
+
+  &:hover {
+    border: 2px solid black;
+  }
+
+  &:active {
+    background-color: black;
+  }
+
+  &:disabled {
+    background-color: #CDCBCA;
+  }
+
+  &:disabled::after {
+    background-color: transparent;
+  }
+}
+

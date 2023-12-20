@@ -1,0 +1,16 @@
+$theme-colors: (
+        'primary':#E1251B,
+        'secondary':#D3D3D3,
+);
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 360px,
+        md: 481px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1600px
+);
+
+@import "bootstrap/scss/bootstrap";
+

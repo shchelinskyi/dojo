@@ -1,0 +1,35 @@
+.overlay {
+  position: fixed;
+  z-index: 1000;
+  top: 100px;
+  left: 0;
+  width: 100vw;
+  //height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+  border: 2px solid red;
+}
+
+.content {
+  margin: 60px auto 0px;
+  z-index: 1001;
+  max-width: 1180px;
+  width: 1180px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #EDEDED;
+  border-radius: 46px;
+  padding: 44px 100px;
+  position: relative;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 44px;
+  left: 100px;
+  cursor: pointer;
+}

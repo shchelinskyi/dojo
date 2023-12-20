@@ -1,0 +1,31 @@
+
+@font-face {
+    font-family: 'Gagalin';
+    src: url('./assets/fonts/gagalin/Gagalin-Regular.eot');
+    src: local('Gagalin'),
+    url('./assets/fonts/gagalin/Gagalin-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/gagalin/Gagalin-Regular.woff2') format('woff2'),
+    url('./assets/fonts/gagalin/Gagalin-Regular.woff') format('woff'),
+    url('./assets/fonts/gagalin/Gagalin-Regular.svg') format('svg'),
+    url('./assets/fonts/gagalin/Gagalin-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}

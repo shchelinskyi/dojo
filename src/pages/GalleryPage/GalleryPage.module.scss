@@ -1,0 +1,149 @@
+.wrapper {
+  max-width: 1720px;
+  margin-top: 50px;
+  margin-bottom: 170px;
+  border-radius: 46px;
+  padding-top: 100px;
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: Gagalin, sans-serif;
+  font-size: 96px;
+  text-align: center;
+  margin-bottom: 100px;
+
+  @media (max-width: 1200px) {
+    font-size: 84px;
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 84px;
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: flex-start;
+  @media (max-width: 1200px) {
+    padding: 0 5px;
+  }
+  @media (max-width: 992px) {
+    column-gap: 10px;
+  }
+  @media (max-width: 700px) {
+    justify-content: center;
+  }
+}
+
+.link {
+  gap:10px;
+  padding:34px 50px;
+  border-radius: 77px;
+  border:2px solid black;
+}
+
+.linkTitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.iconPlus {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.usefulIcon {
+  position:absolute;
+  bottom: -80px;
+  left: 50%;
+  width: 603px;
+  object-fit: cover;
+}
+
+.placeholderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  cursor: pointer;
+
+  @media (max-width: 1200px) {
+    width: 300px;
+  }
+  @media (max-width: 992px) {
+    width: 334px;
+  }
+  @media (max-width: 480px) {
+    width: 320px;
+  }
+}
+
+.placeholderImg {
+  width: 370px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 46px;
+  @media (max-width: 1200px) {
+    width: 290px;
+    height: 260px;
+  }
+  @media (max-width: 992px) {
+    width: 324px;
+    height: 290px;
+  }
+  @media (max-width: 480px) {
+    width: 310px;
+    height: 278px;
+  }
+}
+
+.placeholderDate {
+  width: 140px;
+  @media (max-width: 1200px) {
+    width: 140px;
+  }
+  @media (max-width: 992px) {
+    width: 140px;
+  }
+  @media (max-width: 480px) {
+    width: 140px;
+  }
+}
+
+.placeholderTitle {
+  margin-top: 20px;
+  width: 370px;
+  height: 40px;
+  @media (max-width: 1200px) {
+    margin-top: 20px;
+    width: 290px;
+    height: 20px;
+  }
+  @media (max-width: 992px) {
+    margin-top: 20px;
+    width: 324px;
+    height: 20px;
+  }
+  @media (max-width: 480px) {
+    margin-top: 20px;
+    width: 310px;
+    height: 20px;
+  }
+}
+

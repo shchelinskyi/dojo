@@ -1,0 +1,29 @@
+.customToggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+}
+
+.line {
+  background-color: #000000;
+  border-radius: 10px;
+  height: 5px;
+  width: 40px;
+  display: block;
+  margin: 5px 0;
+  transition: transform 0.3s;
+}
+
+.open .line:nth-child(1) {
+  transform: rotate(-40deg) translate(-5px, 7px);
+}
+
+.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.open .line:nth-child(3) {
+  transform: rotate(40deg) translate(-7px, -7px);
+}

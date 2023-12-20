@@ -1,0 +1,79 @@
+.block {
+  width: 350px;
+  height: 190px;
+  padding-top: 40px;
+  padding-left: 35px;
+  padding-bottom: 36px;
+  border-radius: 46px;
+  background-color: white;
+  position: relative;
+  @media (max-width: 1200px) {
+    width: 100%;
+    padding-top: 26px;
+    height: auto;
+  }
+}
+
+.wrap {
+  @media (max-width: 1200px) {
+   display: none;
+  }
+
+  @media (max-width: 480px) {
+    display: block;
+  }
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  margin-bottom: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+}
+
+.locationIcon {
+  width: 32px;
+  object-fit: cover;
+}
+
+.phoneIcon {
+  width: 24px;
+  object-fit: cover;
+}
+
+
+.text {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  max-width: 240px;
+  @media (max-width: 1200px) {
+    width: 100%;
+    max-width: 100%;
+  }
+  @media (max-width: 480px) {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
+.clipIcon {
+  width: 77px;
+  position: absolute;
+  top:-30px;
+  right: 10px;
+
+  @media (max-width: 700px) {
+    width: 56px;
+    object-fit: cover;
+    top:-20px;
+    right: 10px;
+  }
+}

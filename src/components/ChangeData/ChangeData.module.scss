@@ -1,0 +1,42 @@
+.wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #c41414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  z-index: 2001;
+}
+
+.loadingIcon {
+  width: 50px;
+  height: 38px;
+}
+
+.zoomIn {
+  animation: zoomIn 0.5s infinite alternate;
+}
+
+.zoomOut {
+  animation: zoomOut 0.5s infinite alternate;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}

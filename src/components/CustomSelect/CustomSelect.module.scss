@@ -1,0 +1,35 @@
+.selectContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width:70px;
+
+  margin-right:20px;
+}
+
+.selectBox {
+  padding: 2px;
+  position: relative;
+  appearance: none;
+  background-color: transparent;
+  width: 90%;
+  display: block;
+  border: none;
+  font-size: 16px;
+  z-index: 5;
+  cursor: pointer;
+
+  & option {
+    padding: 5px;
+  }
+
+}
+
+.iconContainer {
+  position: absolute;
+  right: 5px;
+}
+
+.selectIcon {
+  width: 8px;
+}

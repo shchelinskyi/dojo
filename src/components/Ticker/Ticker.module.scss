@@ -1,0 +1,23 @@
+.wrapper {
+  width: 100vw;
+  height: 64px;
+  overflow: hidden;
+}
+
+.tickerText {
+  font-family: Gagalin, sans-serif;
+  font-size: 40px;
+  color:#E1251B;
+  text-transform: uppercase;
+  animation: text 20s infinite linear;
+  white-space: nowrap;
+
+  @media (max-width: 480px) {
+    font-size: 36px;
+  }
+}
+
+@keyframes text {
+  0%{transform: translate(0,0);}
+  100%{transform: translate(-100%,0)}
+}

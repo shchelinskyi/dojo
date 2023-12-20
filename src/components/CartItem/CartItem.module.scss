@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.productImg {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid #D8D8D8;
+  margin-right: 10px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 160px;
+  }
+}
+
+.delBtn {
+  font-size: 30px;
+  cursor: pointer;
+  color: #000000;
+
+  @media (max-width: 700px) {
+    align-self: flex-start;
+    margin-left: auto;
+
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  flex-grow: 2;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 180%;
+  width: 200px;
+
+  @media (max-width: 700px) {
+    width: 250px;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 160px;
+  }
+}
+
+.charactersBlock {
+  width: 160px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+.charactersItem {
+  display: flex;
+  column-gap: 2px;
+  flex-wrap: wrap;
+}
+
+.characterLabel {
+  font-size: 16px;
+  line-height: 140%;
+  color: #737373;
+}
+
+.characterValue {
+  font-size: 16px;
+  line-height: 140%;
+  color: #737373;
+}
+
+.btnGroup {
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-right: 20px;
+
+  @media (max-width: 700px) {
+    margin-right: 0;
+  }
+}
+
+.btnDel {
+  width: 23px;
+  border: 1px solid #808080;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  color: #737373;
+  background-color: #ffffff;
+}
+
+.btnAdd {
+  width: 23px;
+  border: 1px solid #808080;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  color: #737373;
+  background-color: #ffffff;
+}
+
+.quantity {
+  border-top: 1px solid #737373;
+  border-bottom: 1px solid #737373;
+  color: #737373;
+  min-width: 23px;
+  text-align: center;
+}
+
+.price {
+  width: 80px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 153%;
+  color: #E2231A;
+  margin-right: 25px;
+}
+
+
+
