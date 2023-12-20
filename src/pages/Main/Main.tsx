@@ -82,7 +82,7 @@ const Main: FC<MainProps> = ({setRefData}) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            localStorage.setItem("scrollPosition", window.scrollY.toString());
+            sessionStorage.setItem("scrollPosition", window.scrollY.toString());
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -93,7 +93,7 @@ const Main: FC<MainProps> = ({setRefData}) => {
     }, []);
 
     useEffect(() => {
-        const storedScrollPosition = localStorage.getItem("scrollPosition");
+        const storedScrollPosition = sessionStorage.getItem("scrollPosition");
         if (storedScrollPosition) {
             window.scrollTo(0, parseInt(storedScrollPosition));
         }
