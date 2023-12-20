@@ -34,7 +34,7 @@ const GalleryPage = () => {
 
         const timer = setTimeout(() => {
             setShowGalleryCard(true);
-        }, 3000);
+        }, 500);
 
         return () => {
             clearInterval(timer)

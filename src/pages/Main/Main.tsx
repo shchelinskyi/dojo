@@ -21,6 +21,7 @@ import {closeAddToCartModal, closeOrderedModal, openCartModal} from "../../redux
 import s from "./Main.module.scss";
 import React from "react";
 import ShopPage from "../ShopPage";
+import { useLocation } from "react-router-dom";
 
 type RefData = {
     aboutRef: React.RefObject<HTMLDivElement> | null;
@@ -54,7 +55,7 @@ const Main: FC<MainProps> = ({setRefData}) => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 2000);
+        }, 500);
 
         return () => clearTimeout(timer);
     }, []);
@@ -76,6 +77,27 @@ const Main: FC<MainProps> = ({setRefData}) => {
         dispatch(closeAddToCartModal())
         dispatch(openCartModal())
     }
+
+    const location = useLocation();
+
+    useEffect(() => {
+        const handleScroll = () => {
+            localStorage.setItem("scrollPosition", window.scrollY.toString());
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    useEffect(() => {
+        const storedScrollPosition = localStorage.getItem("scrollPosition");
+        if (storedScrollPosition) {
+            window.scrollTo(0, parseInt(storedScrollPosition));
+        }
+    }, [location.pathname]);
 
 
     return (

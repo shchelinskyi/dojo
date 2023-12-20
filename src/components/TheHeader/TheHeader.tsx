@@ -99,8 +99,8 @@ const TheHeader:FC<TheHeaderProps> = ({refData}) => {
     };
 
     const clickLogo = () => {
-        if (pathname !== "/misak-dojo/") {
-            navigate('/misak-dojo/');
+        if (pathname !== "/dojo/") {
+            navigate('/dojo/');
         } else {
             window.scrollTo({
                 top: 20,

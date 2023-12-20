@@ -40,7 +40,7 @@ type RefData = {
     teamRef: React.RefObject<HTMLDivElement> | null;
     gymsRef: React.RefObject<HTMLDivElement> | null;
     galleryRef: React.RefObject<HTMLDivElement> | null;
-    // shopRef: React.RefObject<HTMLDivElement> | null;
+    shopRef: React.RefObject<HTMLDivElement> | null;
     contactsRef: React.RefObject<HTMLDivElement> | null;
 };
 
@@ -58,7 +58,7 @@ const AppRouter = () => {
     return (
         <div>
             <Routes>
-                <Route path="/misak-dojo/" element={<Layout refData={refData}/>}>
+                <Route path="/dojo/" element={<Layout refData={refData}/>}>
                     <Route index element={<Main setRefData={setRefData}/>}/>
                     {language === "ua" && <Route path="privacy-policy" element={<PrivacyPolicyPageUA/>}/>}
                     {language === "en" && <Route path="privacy-policy" element={<PrivacyPolicyPageEN/>}/>}

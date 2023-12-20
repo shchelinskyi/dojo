@@ -87,7 +87,7 @@ const SummerSchool32 = () => {
         <div>
             <div className={s.content}>
                 <div className={s.head}>
-                    <Link to="/misak-dojo/" >
+                    <Link to="/dojo/" >
                         <Image src={arrow} className={s.icon}/>
                     </Link>
                     <div className={s.publishedItem}>{t("published")}: <span>{newsItem.date}</span></div>

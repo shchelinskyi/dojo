@@ -17,7 +17,7 @@ const NewsPage = () => {
 
         const timer = setTimeout(() => {
             setShowNewsCard(true);
-        }, 3000);
+        }, 500);
 
         return () => {
             clearInterval(timer)

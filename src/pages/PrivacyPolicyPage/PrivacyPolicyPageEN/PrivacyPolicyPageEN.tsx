@@ -18,11 +18,11 @@ const PrivacyPolicyPageEN = () => {
         <div className={s.container}>
             <div className={s.content}>
                 <div className={s.logoBlock}>
-                    <Link to="/misak-dojo/">
+                    <Link to="/dojo/">
                         <Image className={s.logo} src={logo}/>
                     </Link>
                     <div>
-                        <Link to="/misak-dojo/">
+                        <Link to="/dojo/">
                             <button className={s.btn}>
                                 {t("return")}
                             </button>
@@ -247,11 +247,11 @@ const PrivacyPolicyPageEN = () => {
                     </ol>
                 </div>
                 <div className={s.logoBlock}>
-                    <Link to="/misak-dojo/">
+                    <Link to="/dojo/">
                         <Image className={s.logo} src={logo}/>
                     </Link>
                     <div>
-                        <Link to="/misak-dojo/">
+                        <Link to="/dojo/">
                             <button className={s.btn}>
                                 {t("return")}
                             </button>
